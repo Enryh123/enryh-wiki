@@ -1,26 +1,97 @@
-## AWS Amplify Vue.js Starter Template
+# Enryh Wiki
 
-This repository provides a starter template for creating applications using Vue.js and AWS Amplify, emphasizing easy setup for authentication, API, and database capabilities.
+这是一个基于 VuePress 2.x 构建的文档网站，从 AWS Amplify Vue 模板项目转换而来。
 
-## Overview
+## 特性
 
-This template equips you with a foundational Vue application integrated with AWS Amplify, streamlined for scalability and performance. It is ideal for developers looking to jumpstart their project with pre-configured AWS services like Cognito, AppSync, and DynamoDB.
+- 🚀 基于 VuePress 2.x 最新版本
+- 📱 响应式设计
+- 🔍 内置搜索功能
+- 🎯 清晰的导航结构
+- ⚡ 快速加载
+- 📝 支持 Markdown
 
-## Features
+## 快速开始
 
-- **Authentication**: Setup with Amazon Cognito for secure user authentication.
-- **API**: Ready-to-use GraphQL endpoint with AWS AppSync.
-- **Database**: Real-time database powered by Amazon DynamoDB.
+### 环境要求
 
-## Deploying to AWS
+- Node.js 18 或更高版本
+- npm 或 yarn
 
-For detailed instructions on deploying your application, refer to the [deployment section](https://docs.amplify.aws/vue/start/quickstart/#deploy-a-fullstack-app-to-aws) of our documentation.
+### 安装依赖
 
+```bash
+npm install
+```
 
-## Security
+### 启动开发服务器
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+```bash
+npm run dev
+```
 
-## License
+访问 `http://localhost:8080` 查看网站。
 
-This library is licensed under the MIT-0 License. See the LICENSE file.
+### 构建生产版本
+
+```bash
+npm run build
+```
+
+## 项目结构
+
+```
+docs/
+├── .vuepress/
+│   ├── config.ts          # VuePress 配置文件
+│   ├── client.ts          # 客户端配置
+│   ├── public/            # 静态资源
+│   └── styles/            # 自定义样式
+├── guide/                 # 指南文档
+├── api/                   # API 文档
+└── README.md             # 主页
+```
+
+## 导航结构
+
+- **首页** - 网站主页
+- **指南** - 使用指南和教程
+  - 快速开始
+  - 配置说明
+- **API** - API 文档
+  - API 概览
+  - 端点文档
+
+## 自定义配置
+
+编辑 `docs/.vuepress/config.ts` 文件来自定义：
+
+- 网站标题和描述
+- 导航栏
+- 侧边栏
+- 主题样式
+- 插件配置
+
+## 部署
+
+构建后的文件位于 `docs/.vuepress/dist/` 目录，可以部署到：
+
+- GitHub Pages
+- Netlify
+- Vercel
+- AWS Amplify
+
+## 开发命令
+
+| 命令 | 说明 |
+|------|------|
+| `npm run dev` | 启动开发服务器 |
+| `npm run build` | 构建生产版本 |
+| `npm run clean-dev` | 清除缓存并启动开发服务器 |
+
+## 技术栈
+
+- **VuePress 2.x** - 静态网站生成器
+- **Vite** - 构建工具
+- **TypeScript** - 类型系统
+- **Vue 3** - 前端框架

@@ -1,0 +1,86 @@
+// VuePress 自定义样式
+:root {
+  // 主题色
+  --c-brand: #3eaf7c;
+  --c-brand-light: #4abf8a;
+  --c-brand-dark: #2d7a57;
+  
+  // 文字颜色
+  --c-text: #2c3e50;
+  --c-text-light: #3a5169;
+  --c-text-lighter: #4e6e8e;
+  
+  // 边框颜色
+  --c-border: #eaecef;
+  --c-border-dark: #dfe2e5;
+  
+  // 背景色
+  --c-bg: #ffffff;
+  --c-bg-light: #f3f4f5;
+  --c-bg-lighter: #eeeeee;
+  
+  // 代码块
+  --c-code-bg: #282c34;
+  --c-code-text: #abb2bf;
+}
+
+// 暗色主题
+html.dark {
+  --c-brand: #3eaf7c;
+  --c-brand-light: #4abf8a;
+  --c-text: #adbac7;
+  --c-text-light: #96a7b5;
+  --c-text-lighter: #8b9eb0;
+  --c-border: #3e4c5a;
+  --c-border-dark: #4e5c6a;
+  --c-bg: #22272e;
+  --c-bg-light: #2d333b;
+  --c-bg-lighter: #363d45;
+}
+
+// 自定义样式
+.navbar {
+  .site-name {
+    font-weight: 600;
+  }
+}
+
+.sidebar {
+  .sidebar-item {
+    font-size: 0.95rem;
+  }
+}
+
+// 代码块样式
+[class*="language-"] {
+  border-radius: 6px;
+  font-size: 0.875em;
+  line-height: 1.6;
+}
+
+// 表格样式
+table {
+  border-collapse: collapse;
+  margin: 1rem 0;
+  display: block;
+  overflow-x: auto;
+}
+
+th, td {
+  border: 1px solid var(--c-border);
+  padding: 0.6em 1em;
+}
+
+th {
+  font-weight: 600;
+  background-color: var(--c-bg-light);
+}
+
+// 响应式调整
+@media (max-width: 719px) {
+  .theme-default-content {
+    code {
+      font-size: 0.8em;
+    }
+  }
+}

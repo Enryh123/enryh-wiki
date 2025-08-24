@@ -8,6 +8,9 @@ export default defineUserConfig({
   title: 'Enryh Wiki',
   description: '一个基于 VuePress 的文档网站',
   
+  // 根据 Amplify 部署环境设置 base URL
+  base: process.env.NODE_ENV === 'production' ? '/' : '/',
+  
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],

@@ -1,16 +1,3 @@
 import comp from "/Users/henry/enryh-wiki/docs/.vuepress/.temp/pages/api/index.html.vue"
-const data = JSON.parse("{\"path\":\"/api/\",\"title\":\"API 文档\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"api/README.md\"}")
+const data = JSON.parse("{\"path\":\"/api/\",\"title\":\"API 文档\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"git\":{\"updatedTime\":1756012463000,\"contributors\":[{\"name\":\"16683909123\",\"username\":\"16683909123\",\"email\":\"13985759+cenryh@user.noreply.gitee.com\",\"commits\":1,\"url\":\"https://github.com/16683909123\"}],\"changelog\":[{\"hash\":\"a62f7261a198ea680a5be2abc0e089f5e98c08fa\",\"time\":1756012463000,\"email\":\"13985759+cenryh@user.noreply.gitee.com\",\"author\":\"16683909123\",\"message\":\"init\"}]},\"filePathRelative\":\"api/README.md\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

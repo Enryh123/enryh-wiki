@@ -74,12 +74,28 @@ docs/
 
 ## 部署
 
-构建后的文件位于 `docs/.vuepress/dist/` 目录，可以部署到：
+### AWS Amplify 部署
+本项目已针对 AWS Amplify 优化配置：
 
-- GitHub Pages
+1. **一键部署**:
+   - 登录 AWS Amplify 控制台
+   - 连接此 Git 仓库
+   - 构建命令: `npm run amplify:build`
+   - 输出目录: `docs/.vuepress/dist`
+
+2. **详细部署指南**: 查看 [DEPLOY.md](DEPLOY.md)
+
+### 其他平台部署
+构建后的文件位于 `docs/.vuepress/dist/`，可以部署到：
 - Netlify
 - Vercel
-- AWS Amplify
+- GitHub Pages
+- 任何静态文件服务器
+
+### 构建静态文件
+```bash
+npm run build
+```
 
 ## 开发命令
 
